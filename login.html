@@ -5,22 +5,16 @@
 </head>
 <body>
 <script type="text/javascript">
-	var userName = prompt('Who s there?','');
-	if (userName == 'admin') {
-		alert('Wellcome');
-	} else if (userName == null) {
-		alert('Cancer');
-	} else {
-		alert('I dont know you');
-	}
-	var pass = prompt('Password',"");
-	if (pass == 'TheMaster') {
-		alert('Wellcome!');
-	}  else if (pass == null) {
+	var userName = prompt('username:', '');
+	var passWord = prompt('pass:', '');
+	if (userName == "Admin" && passWord == "TheMaster") {
+		alert('Wellcome: ' + userName);
+
+	} else if (userName == "null" && passWord == "null") {
 		alert('Canceled.');
 	} else {
-		alert('Wrong password');
-	}
+		alert('Login failed.');
+	} 
 </script>
 </body>
 </html>
